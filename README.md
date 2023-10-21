@@ -1,3 +1,7 @@
+<h1 align="center">
+  <img src="https://github.com/juampam/lab-herencia/blob/main/img/uvg_logo.jpg?sanitize=true" alt="Anura CSS - HTML + CSS Builder" width="75%">
+</h1>
+
 # Laboratorio 3: Herencia
 ![Commit Activity](https://img.shields.io/github/commit-activity/w/juampam/lab-herencia?style=for-the-badge)
 ![Contributors](https://img.shields.io/github/contributors/juampam/lab-herencia?style=for-the-badge)
