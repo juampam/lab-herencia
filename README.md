@@ -1,6 +1,8 @@
 # Laboratorio 3: Herencia
-![Java](https://img.shields.io/badge/Java-8, 11, 16-blue)
-
+![Commit Activity](https://img.shields.io/github/commit-activity/w/juampam/lab-herencia?style=for-the-badge)
+![Contributors](https://img.shields.io/github/contributors/juampam/lab-herencia?style=for-the-badge)
+![Licence](https://img.shields.io/github/license/juampam/lab-herencia?style=for-the-badge)
+![repo size](https://img.shields.io/github/repo-size/juampam/lab-herencia?style=for-the-badge)
 ## Requisitos Funcionales del Sistema:
 
 1. **Cargar Productos desde Archivo CSV**:
