@@ -1,13 +1,19 @@
-<h1 align="rigth">
-  <img src="https://github.com/juampam/lab-herencia/blob/main/img/uvg_logo.jpg?sanitize=true" alt="Anura CSS - HTML + CSS Builder" width="20%">
-  <img src="https://github.com/juampam/lab-herencia/blob/main/img/uvg_ing.jpg?sanitize=true" alt="Anura CSS - HTML + CSS Builder" width="20%">
-</h1>
+<div align="center">
+  <img src="https://github.com/juampam/lab-herencia/blob/main/img/uvg_logo.jpg?sanitize=true" width="15%">
+  <img src="https://github.com/juampam/lab-herencia/blob/main/img/uvg_ing.jpg?sanitize=true" width="20%">
 
-# Laboratorio 3: Herencia
-![Commit Activity](https://img.shields.io/github/commit-activity/w/juampam/lab-herencia?style=for-the-badge)
-![Contributors](https://img.shields.io/github/contributors/juampam/lab-herencia?style=for-the-badge)
-![Licence](https://img.shields.io/github/license/juampam/lab-herencia?style=for-the-badge)
-![repo size](https://img.shields.io/github/repo-size/juampam/lab-herencia?style=for-the-badge)
+  ![Commit Activity](https://img.shields.io/github/commit-activity/w/juampam/lab-herencia?style=for-the-badge)
+  ![Contributors](https://img.shields.io/github/contributors/juampam/lab-herencia?style=for-the-badge)
+  ![Licence](https://img.shields.io/github/license/juampam/lab-herencia?style=for-the-badge)
+  ![repo size](https://img.shields.io/github/repo-size/juampam/lab-herencia?style=for-the-badge)
+ 
+  <h1>CC2008 - Introducción a la Programación Orientada a Objetos</h1>
+  <h2>Laboratorio 3: Herencia</h2>
+
+
+</div>
+
+
 ## Requisitos Funcionales del Sistema:
 
 1. **Cargar Productos desde Archivo CSV**:
