@@ -4,7 +4,7 @@ public class Producto {
     private int cantidadDisponible;
     private int cantidadVendidos;
     private String estado;
-    private double precio;
+    protected double precio;
 
   
     public Producto(int idProducto, String nombre, int cantidadDisponible, int cantidadVendidos, String estado, double precio) {
