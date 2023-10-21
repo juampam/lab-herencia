@@ -7,7 +7,7 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) {
         Inventario inventario = new Inventario(); 
-        cargarDatosDesdeCSV(inventario, "datos.csv");
+        cargarDatosDesdeCSV(inventario, "./data/datos.csv");
 
         System.out.println("Inventario:");
         inventario.listarCategorias();
