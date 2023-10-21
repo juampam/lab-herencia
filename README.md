@@ -35,24 +35,17 @@
 ## Propósito de Cada Clase:
 
 - **Producto**:
-  - Propósito: Representar los atributos y comportamientos generales de un producto en la tienda. Sirve como clase base para otras categorías de productos.
-  - Atributos: Almacena información común a todos los productos, como ID, nombre, cantidad disponible, cantidad vendida, estado y precio.
-  - Métodos: Proporciona métodos para obtener y actualizar los atributos.
+- Representar los atributos y comportamientos generales de un producto en la tienda. Sirve como clase base para otras categorías de productos.
+  
 
 - **Pantalones**, **BlusaCamisa**, **Collares**:
-  - Propósito: Representar categorías específicas de productos (pantalones, blusas/camisas, collares), cada una con sus atributos específicos (talla, tipo, color, material).
-  - Atributos: Además de heredar atributos de `Producto`, tienen atributos específicos de su categoría.
-  - Métodos: Pueden tener métodos específicos de su categoría, pero no se han incluido en el diseño.
+  - Representar categorías específicas de productos (pantalones, blusas/camisas, collares), cada una con sus atributos específicos (talla, tipo, color, material).
 
 - **Categoría**:
-  - Propósito: Organizar y agrupar productos en categorías para facilitar la gestión y búsqueda de productos relacionados.
-  - Atributos: Almacena el nombre de la categoría y una lista de productos asociados.
-  - Métodos: Puede proporcionar métodos para agregar, eliminar o buscar productos dentro de la categoría.
-
+  - Organizar y agrupar productos en categorías para facilitar la gestión y búsqueda de productos relacionados.
+ 
 - **Inventario**:
-  - Propósito: Gestionar todas las categorías y productos disponibles en la tienda.
-  - Atributos: Contiene una lista de categorías que agrupan productos.
-  - Métodos: Ofrece métodos para cargar productos desde un archivo CSV, buscar productos por ID, listar productos de una categoría y mostrar las ventas actuales.
+  - Gestionar todas las categorías y productos disponibles en la tienda.
 
 
 ## Propósito de Cada Método:
