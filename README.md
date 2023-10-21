@@ -54,11 +54,17 @@
   - Atributos: Contiene una lista de categorías que agrupan productos.
   - Métodos: Ofrece métodos para cargar productos desde un archivo CSV, buscar productos por ID, listar productos de una categoría y mostrar las ventas actuales.
 
-## Propósito de Cada Atributo de Cada Clase:
 
-- Los atributos de cada clase almacenan información relevante para su respectiva clase. Por ejemplo, la clase `Producto` almacena atributos como `id`, `nombre`, `cantidad_disponible`, `cantidad_vendidos`, `estado`, y `precio`, que son esenciales para describir un producto en la tienda. Las clases hijas (`Pantalones`, `BlusaCamisa`, `Collares`) agregan atributos específicos relacionados con su tipo de producto, como `talla`, `tipo`, `color` y `material. La clase `Categoría` almacena el nombre de la categoría y una lista de productos asociados, mientras que la clase `Inventario` almacena una lista de categorías.
+## Propósito de Cada Método:
+#### Métodos de la Clase `Inventario`:
+- **Cargar Productos desde Archivo CSV**: Este método carga productos desde un archivo CSV y los organiza en categorías en el inventario. Facilita la inicialización de los productos en el sistema.
 
-## Propósito de Cada Método de Cada Clase:
+- **Buscar Producto por ID**: Permite buscar un producto específico por su ID en el inventario y devuelve la información completa del producto encontrado.
 
-- Los métodos en cada clase tienen la finalidad de proporcionar funcionalidades específicas relacionadas con su tipo de objeto y sus atributos. Por ejemplo, en la clase `Producto`, los métodos permiten obtener y modificar los atributos del producto. En la clase `Inventario`, los métodos permiten cargar productos desde un archivo CSV, buscar productos por ID, listar productos de una categoría y mostrar las ventas actuales. Las clases hijas pueden tener métodos adicionales relacionados con las operaciones específicas de su tipo de producto, como cálculos de tallas, colores o tipos de productos. Estos métodos realizan acciones específicas y devuelven resultados relevantes para cada clase.
+- **Listar Productos de una Categoría**: Lista todos los productos que pertenecen a una categoría específica. Ayuda a mostrar productos relacionados en una categoría determinada.
 
+- **Mostrar Ventas Actuales**: Calcula y muestra el monto total de las ventas actuales en la tienda sumando las cantidades vendidas de todos los productos disponibles. Proporciona una visión general de las ventas en curso.
+#### Métodos de la Clase `Producto`:
+- **Getters y Setters**: Acceder y modificar los atributos de una clase de manera controlada
+#### Métodos de la Clase `Main`:
+- **Main**: Ejecutar el programa
