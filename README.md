@@ -32,6 +32,10 @@
    - El sistema debe mostrar el monto total de las ventas actuales de la tienda.
    - Esto se logra sumando las cantidades vendidas de todos los productos disponibles.
 
+## Diagrama UML
+ <img src="https://github.com/juampam/lab-herencia/blob/main/img/UML.jpg?sanitize=true">
+
+
 ## Propósito de Cada Clase:
 
 - **Producto**:
