@@ -4,7 +4,6 @@
 
   ![Commit Activity](https://img.shields.io/github/commit-activity/w/juampam/lab-herencia?style=for-the-badge)
   ![Contributors](https://img.shields.io/github/contributors/juampam/lab-herencia?style=for-the-badge)
-  ![Licence](https://img.shields.io/github/license/juampam/lab-herencia?style=for-the-badge)
   ![repo size](https://img.shields.io/github/repo-size/juampam/lab-herencia?style=for-the-badge)
  
   <h1>CC2008 - Introducción a la Programación Orientada a Objetos</h1>
