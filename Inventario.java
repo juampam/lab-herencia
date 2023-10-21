@@ -18,6 +18,7 @@ public class Inventario {
         }
     }
 
+
     public Categoria encontrarCategoriaPorNombre(String nombre) {
         for (Categoria categoria : categorias) {
             if (categoria.getNombre().equals(nombre)) {
@@ -25,5 +26,5 @@ public class Inventario {
             }
         }
         return null; 
-
+    }
 }
