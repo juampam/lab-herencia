@@ -1,5 +1,6 @@
 <h1 align="center">
   <img src="https://github.com/juampam/lab-herencia/blob/main/img/uvg_logo.jpg?sanitize=true" alt="Anura CSS - HTML + CSS Builder" width="20%">
+  <img src="https://github.com/juampam/lab-herencia/blob/main/img/uvg_ing.jpg?sanitize=true" alt="Anura CSS - HTML + CSS Builder" width="20%">
 </h1>
 
 # Laboratorio 3: Herencia
