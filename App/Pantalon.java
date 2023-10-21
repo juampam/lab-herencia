@@ -1,3 +1,4 @@
+package App;
 public class Pantalon extends Producto {
     private String talla;
     private String tipo;

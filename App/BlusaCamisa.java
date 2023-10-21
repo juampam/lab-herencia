@@ -1,3 +1,5 @@
+package App;
+
 public class BlusaCamisa extends Producto {
     private String talla;
     private String color;

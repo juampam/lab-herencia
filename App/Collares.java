@@ -1,3 +1,5 @@
+package App;
+
 public class Collares extends Producto {
     private String talla;
     private String material;
