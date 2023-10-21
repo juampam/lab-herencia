@@ -23,49 +23,59 @@ public class Inventario {
         }
     }
 
-
     public Categoria encontrarCategoriaPorNombre(String nombre) {
         for (Categoria categoria : categorias) {
             if (categoria.getNombre().equals(nombre)) {
                 return categoria;
             }
         }
-        return null; 
+        return null; // Retorna null si la categoría no se encuentra.
     }
 
-    public void cargarDatos(String file) {
-        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+    public void cargarProductosDesdeCSV(String archivoCSV) {
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(archivoCSV));
             String linea;
-            while ((linea = br.readLine()) != null) {
-                String[] datos = linea.split(",");
-                int idProducto = Integer.parseInt(datos[0]);
-                String nombre = datos[1];
-                int cantidadDisponible = Integer.parseInt(datos[2]);
-                int cantidadVendidos = Integer.parseInt(datos[3]);
-                String estado = datos[4];
-                double precio = Double.parseDouble(datos[5]);
-                String categoria = datos[6];
+            boolean primeraLinea = true; // Para omitir la línea de encabezado
 
-                // Crear instancia de Producto o ProductoEspecifico según la categoría
-                Producto producto = new Producto(idProducto, nombre, cantidadDisponible, cantidadVendidos, estado, precio);
+            while ((linea = reader.readLine()) != null) {
+                if (primeraLinea) {
+                    primeraLinea = false; // Saltar la primera línea (encabezado)
+                    continue;
+                }
 
-                // Buscar o crear la categoría y agregar el producto
-                Categoria cat = null;
-                for (Categoria c : categorias) {
-                    if (c.getNombre().equals(categoria)) {
-                        cat = c;
-                        break;
+                String[] campos = linea.split(",");
+                if (campos.length == 11) { // Asegurarse de que haya 11 campos
+                    int idProducto = Integer.parseInt(campos[0]);
+                    String nombre = campos[1];
+                    int cantidadDisponible = Integer.parseInt(campos[2]);
+                    int cantidadVendidos = Integer.parseInt(campos[3]);
+                    String estado = campos[4];
+                    double precio = Double.parseDouble(campos[5]);
+                    String categoria = campos[6];
+                    String talla = campos[7];
+                    String tipo = campos[8];
+                    String color = campos[9];
+                    String material = campos[10];
+
+                    // Crear productos basados en los datos del CSV
+                    Producto producto = new Producto(idProducto, nombre, cantidadDisponible, cantidadVendidos, estado, precio);
+
+                    // Determinar la categoría y agregar el producto a la categoría correspondiente
+                    Categoria categoriaExistente = encontrarCategoriaPorNombre(categoria);
+                    if (categoriaExistente == null) {
+                        categoriaExistente = new Categoria(categoria);
+                        agregarCategoria(categoriaExistente);
                     }
+                    categoriaExistente.agregarProducto(producto);
+
+                    // Aquí deberías manejar las clases hijas si las tienes en tu diseño.
                 }
-                if (cat == null) {
-                    cat = new Categoria(categoria);
-                    categorias.add(cat);
-                }
-                cat.agregarProducto(producto);
             }
+            reader.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-    
 }
+
