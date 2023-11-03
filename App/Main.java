@@ -31,6 +31,10 @@ public class Main {
                     System.out.println("Inventario:");
                     inventario.listarProductos();
                     break;
+                case 3:
+                    System.out.println("Categoria:");
+                    inventario.listarCategorias();
+                    break;
                 case 4:
                     System.out.println("Saliendo del programa.");
                     System.exit(0);
