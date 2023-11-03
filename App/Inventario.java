@@ -58,6 +58,7 @@ public class Inventario {
     }
 
     public void agregarCategoria(Categoria categoria) {
+        
         categorias.add(categoria);
     }
 
@@ -66,6 +67,10 @@ public class Inventario {
             System.out.println("Categoría: " + categoria.getNombre());
             categoria.listarProductos();
         }
+    }
+
+ public void listarProductos() {
+        readCSV("./data/datos.csv");
     }
 
     public Categoria encontrarCategoriaPorNombre(String nombre) {

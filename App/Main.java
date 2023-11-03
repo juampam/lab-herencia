@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Inventario inventario = new Inventario(); // Crear un inventario
-	    inventario.readCSV("./data/datos.csv");
+//	    inventario.readCSV("./data/datos.csv");
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
             System.out.println("\nMenú:");
             System.out.println("1. Agregar categoría");
-            System.out.println("2. Listar categorías y productos");
+            System.out.println("2. Listar todos los productos");
             System.out.println("3. Buscar categoría por nombre");
             System.out.println("4. Salir");
             System.out.print("Elija una opción: ");
@@ -29,20 +29,8 @@ public class Main {
 
                 case 2:
                     System.out.println("Inventario:");
-                    inventario.listarCategorias();
+                    inventario.listarProductos();
                     break;
-
-                case 3:
-                    System.out.print("Ingrese el nombre de la categoría a buscar: ");
-                    String nombreBuscar = scanner.next();
-                    Categoria categoriaEncontrada = inventario.encontrarCategoriaPorNombre(nombreBuscar);
-                    if (categoriaEncontrada != null) {
-                        System.out.println("Categoría encontrada: " + categoriaEncontrada.getNombre());
-                    } else {
-                        System.out.println("Categoría no encontrada.");
-                    }
-                    break;
-
                 case 4:
                     System.out.println("Saliendo del programa.");
                     System.exit(0);
