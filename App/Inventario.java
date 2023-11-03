@@ -11,27 +11,6 @@ public class Inventario {
     public Inventario() {
         this.categorias = new ArrayList<>();
     }
-
-    public void agregarCategoria(Categoria categoria) {
-        categorias.add(categoria);
-    }
-
-    public void listarCategorias() {
-        for (Categoria categoria : categorias) {
-            System.out.println("Categoría: " + categoria.getNombre());
-            categoria.listarProductos();
-        }
-    }
-
-    public Categoria encontrarCategoriaPorNombre(String nombre) {
-        for (Categoria categoria : categorias) {
-            if (categoria.getNombre().equals(nombre)) {
-                return categoria;
-            }
-        }
-        return null; // Retorna null si la categoría no se encuentra.
-    }
-
     public void readCSV(String archivoCSV) {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(archivoCSV));
@@ -58,10 +37,8 @@ public class Inventario {
                     String color = campos[9];
                     String material = campos[10];
 
-                    // Crear productos basados en los datos del CSV
                     Producto producto = new Producto(idProducto, nombre, cantidadDisponible, cantidadVendidos, estado, precio);
 
-                    // Determinar la categoría y agregar el producto a la categoría correspondiente
                     Categoria categoriaExistente = encontrarCategoriaPorNombre(categoria);
                     if (categoriaExistente == null) {
                         categoriaExistente = new Categoria(categoria);
@@ -69,13 +46,9 @@ public class Inventario {
                     }
                     categoriaExistente.agregarProducto(producto);
 
-                    // Aquí deberías manejar las clases hijas si las tienes en tu diseño.
                 }
                 System.out.println(campos[0] +"\t"+ campos[1] +"\t\t"+ campos[2]+"\t"+ campos[3] +"\t\t"+ campos[4]+"\t"+ campos[5] +"\t\t"+ campos[6]);
 
-              /*  for(int i = 0;i<campos.length;i++){
-                    System.out.println(campos[i]);
-                }*/
             }
             reader.close();
         } catch (IOException e) {
@@ -83,5 +56,27 @@ public class Inventario {
         }
         
     }
+
+    public void agregarCategoria(Categoria categoria) {
+        categorias.add(categoria);
+    }
+
+    public void listarCategorias() {
+        for (Categoria categoria : categorias) {
+            System.out.println("Categoría: " + categoria.getNombre());
+            categoria.listarProductos();
+        }
+    }
+
+    public Categoria encontrarCategoriaPorNombre(String nombre) {
+        for (Categoria categoria : categorias) {
+            if (categoria.getNombre().equals(nombre)) {
+                return categoria;
+            }
+        }
+        return null; // Retorna null si la categoría no se encuentra.
+    }
+
+    
 }
 

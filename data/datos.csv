@@ -1,10 +1,10 @@
-id_producto,nombre,cantidad_disponible,cantidad_vendidos,estado,precio,categoria,talla,tipo,color,material
-1,Pantalón Casual,100,20,disponible,29.99,Ropa,M,lona,azul,
-2,Blusa Elegante,75,15,disponible,49.99,Ropa,S,rojo,
-3,Collar de Oro,10,5,disponible,149.99,Joyas,única,,oro
-4,Collar de Plata,20,4,disponible,69.99,Joyas,única,,plata
-5,Pantalón Skinny,45,12,disponible,39.99,Ropa,S,lona,negro,
-6,Blusa Estampada,55,18,disponible,44.99,Ropa,L,verde,
-7,Pantalón Jogger,30,7,disponible,29.99,Ropa,M,jogger,gris,
-8,Pantalón Lona,90,20,disponible,27.99,Ropa,S,lona,azul,
-9,Blusa a Rayas,40,10,disponible,39.99,Ropa,L,rayas,
+id_producto,nombre,cantidad_disponible,cantidad_vendidos,estado,precio,categoria,talla,tipo,color
+1,Pantalón Casual,100,20,disponible,29.99,Ropa,M,lona,azul
+2,Blusa Elegante,75,15,disponible,49.99,Ropa,S,Elegante,rojo
+3,Collar de Oro,10,5,disponible,149.99,Joyas,única,joyas,oro
+4,Collar de Plata,20,4,disponible,69.99,Joyas,única,joyas,plata
+5,Pantalón Skinny,45,12,disponible,39.99,Ropa,S,lona,negro
+6,Blusa Estampada,55,18,disponible,44.99,Ropa,L,verde,azul
+7,Pantalón Jogger,30,7,disponible,29.99,Ropa,M,jogger,gris
+8,Pantalón Lona,90,20,disponible,27.99,Ropa,S,lona,azul
+9,Blusa a Rayas,40,10,disponible,39.99,Ropa,L,rayas,blanco
