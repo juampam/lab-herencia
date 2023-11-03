@@ -71,7 +71,7 @@ public class Inventario {
 
                     // Aquí deberías manejar las clases hijas si las tienes en tu diseño.
                 }
-                System.out.println(campos[0] +"\t"+ campos[1] +"\t\t"+ campos[2]);
+                System.out.println(campos[0] +"\t"+ campos[1] +"\t\t"+ campos[2]+"\t"+ campos[3] +"\t\t"+ campos[4]+"\t"+ campos[5] +"\t\t"+ campos[6]);
 
               /*  for(int i = 0;i<campos.length;i++){
                     System.out.println(campos[i]);
