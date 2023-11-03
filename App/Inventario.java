@@ -32,7 +32,7 @@ public class Inventario {
         return null; // Retorna null si la categoría no se encuentra.
     }
 
-    public void cargarProductosDesdeCSV(String archivoCSV) {
+    public void readCSV(String archivoCSV) {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(archivoCSV));
             String linea;

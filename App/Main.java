@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Inventario inventario = new Inventario(); // Crear un inventario
-	inventario.cargarProductosDesdeCSV("./data/datos.csv");
+	inventario.readCSV("./data/datos.csv");
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
